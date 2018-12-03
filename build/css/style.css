@@ -445,6 +445,57 @@ input[type="radio"]:focus + label {
   height: 100px;
   outline: 1px dashed;
 }
+.ticket {
+  width: 648px;
+  height: 265px;
+  border: 1px solid black;
+  border-radius: 0 20px 20px 0;
+  margin: 50px 0 0 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.ticket .part1 {
+  width: 129px;
+  outline: 1px dashed black;
+  margin-left: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.ticket .part1 img {
+  margin-top: 15px;
+}
+.ticket .part1 article {
+  width: 108px;
+  height: 91px;
+  outline: 1px dashed;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+.ticket .part1 article p {
+  margin: 0;
+}
+.ticket .part2 {
+  width: 334px;
+  outline: 1px dashed black;
+}
+.ticket .part3 {
+  width: 121px;
+  outline: 1px dashed black;
+}
 .main__intro h1 {
   font-family: "Nunito Sans";
   font-size: 40px;
