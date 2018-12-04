@@ -7,38 +7,190 @@
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
+    box-sizing: border-box;
+    // padding: 15px 20px 15px 15px;
 
     .part1 {
-        width: 129px;
-        outline: 1px dashed black;
-        margin-left: 15px;
+        width: 144px;
+        padding: 20px 0 15px 15px;
+        box-sizing: border-box;
         display: flex;
-        flex-direction: column;
+        flex-wrap: wrap;
         justify-content: space-between;
-
-        img {
-            margin-top: 15px;
-        }
 
         article {
             width: 108px;
-            height: 91px;
-            outline: 1px dashed;
+            min-height: 71px;
             transform: rotate(-90deg);
 
             p {
                 margin: 0;
+                
+
+                &:first-of-type {
+                    font-weight: 400;
+                    font-size: 12px;
+
+                }
+
+                &:nth-of-type(2) {
+                    font-weight: 300;
+                    font-size: 4vw;
+
+                }
+
+
+                &:nth-of-type(3) {
+                    font-weight: 500;
+                    font-size: 12px;
+
+                }
+                
+                
             }
         }
     }
 
     .part2 {
         width: 334px;
-        outline: 1px dashed black;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 10px 0 15px 0px;
+        box-sizing: border-box;
+
+        p {
+            margin: 0;
+        }
+
+        .row1 {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 16px;
+
+            p {
+                font-weight: 400;
+            }
+
+            div {
+                max-width: 115px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: flex-end;
+
+                p {
+                    &:first-of-type {
+                        font-weight: 700;
+                    }
+                    &:last-of-type {
+                        font-weight: 300;
+                    }
+                }
+            }
+        }
+
+        .row2 {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+
+            p {
+                font-size: 14px;
+                font-weight: 700;
+                text-transform: uppercase;
+            }
+
+            div {
+                display: flex;
+                flex-wrap: nowrap;
+                justify-content: space-between;
+                align-items: center;
+                width: 334px;
+
+                p {
+                    font-weight: 400;
+                    font-size: 18px;
+
+                    &:first-of-type {
+                        font-size: 12px;
+                        text-transform: none;
+                    }
+
+                    span {
+                        font-family: "Lucida Grande";
+                        font-size: 38px;
+                        font-weight: 700;
+                        margin-left: 9px;
+                        line-height: 12px;
+                    }
+                }
+            }
+        }
+
+        .row1, .row2 {
+            height: 50px;
+            border-bottom: 1px solid #363636;
+        }
+
+        .row3 {
+            height: 116px;
+            outline: 1px dashed #363636;
+            font-size: 12px;
+            font-weight: 500;
+            text-transform: uppercase;
+            display: flex;
+            align-items: center;
+
+            p {
+                width: 313px;
+                margin: auto;
+                line-height: 15px;
+            }
+        }
     }
 
     .part3 {
         width: 121px;
-        outline: 1px dashed black;
+        box-sizing: border-box;
+        padding: 20px 15px 15px 0px;
+
+        // padding: 15px 0px 15px 10px;
+        height: 265px;
+        display: flex;
+        flex-wrap: wrap;
+        border-left: 2px dashed #363636;
+
+        .qr {
+            margin-left: 20px;
+
+        }
+
+        .text {
+            font-size: 12px;
+            font-weight: 400;
+            transform: rotate(-90deg);
+            min-height: 31px;
+            max-height: 70px;
+            min-width: 119px;
+            margin-top: 15px;
+
+            p {
+                margin: 0;
+                margin-bottom: 2px;
+            }
+
+            span {
+                font-size: 28px;
+            }
+
+            div {
+                display: flex;
+                flex-wrap: nowrap;
+            }
+        }
     }
 }
