@@ -473,10 +473,14 @@ input[type="radio"]:focus + label {
           justify-content: space-between;
 }
 .ticket .part1 article {
-  width: 108px;
-  min-height: 71px;
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
+  min-height: 31px;
+  max-height: 70px;
+  min-width: 139px;
+  max-width: 139px;
+  margin-top: 11px;
+  margin-left: -40px;
 }
 .ticket .part1 article p {
   margin: 0;
@@ -641,8 +645,9 @@ input[type="radio"]:focus + label {
           transform: rotate(-90deg);
   min-height: 31px;
   max-height: 70px;
-  min-width: 119px;
-  margin-top: 15px;
+  min-width: 139px;
+  margin-top: 0px;
+  margin-left: -18px;
 }
 .ticket .part3 .text p {
   margin: 0;
