@@ -1,6 +1,0 @@
-build/
-spec/
-.gitignore
-.travis.yml
-.editorconfig
-gruntfile.coffee
