@@ -458,60 +458,61 @@ input[type="radio"]:focus + label {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
+.ticket .part1,
+.ticket .part2,
+.ticket .part3 {
+  height: 265px;
+}
 .ticket .part1 {
   width: 144px;
   padding: 20px 0 15px 15px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  position: relative;
 }
 .ticket .part1 article {
-  -webkit-transform: rotate(-90deg);
-          transform: rotate(-90deg);
-  min-height: 31px;
-  max-height: 70px;
-  min-width: 139px;
-  max-width: 139px;
-  margin-top: 11px;
-  margin-left: -40px;
+  position: relative;
+  margin-top: -6px;
+  height: 129px;
+  width: auto;
 }
 .ticket .part1 article p {
   margin: 0;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  position: relative;
+  font-size: 12px;
 }
 .ticket .part1 article p:first-of-type {
   font-weight: 400;
   font-size: 12px;
+  left: -57px;
+  top: 76px;
 }
 .ticket .part1 article p:nth-of-type(2) {
   font-weight: 300;
-  font-size: 4vw;
+  font-size: 43px;
+  top: 50px;
+  left: -26px;
 }
 .ticket .part1 article p:nth-of-type(3) {
   font-weight: 500;
   font-size: 12px;
+  top: 11px;
+  left: 6px;
 }
 .ticket .part2 {
   width: 334px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   padding: 10px 0 15px 0px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
 }
 .ticket .part2 p {
   margin: 0;
@@ -564,11 +565,18 @@ input[type="radio"]:focus + label {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  position: relative;
+}
+.ticket .part2 .row2__seat {
+  position: relative;
+  top: -6px;
+  right: 0;
 }
 .ticket .part2 .row2 p {
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 700;
   text-transform: uppercase;
+  max-width: 270px;
 }
 .ticket .part2 .row2 div {
   display: -webkit-box;
@@ -586,7 +594,7 @@ input[type="radio"]:focus + label {
 }
 .ticket .part2 .row2 div p {
   font-weight: 400;
-  font-size: 18px;
+  font-size: 12px;
 }
 .ticket .part2 .row2 div p:first-of-type {
   font-size: 12px;
@@ -594,15 +602,18 @@ input[type="radio"]:focus + label {
 }
 .ticket .part2 .row2 div p span {
   font-family: "Lucida Grande";
-  font-size: 38px;
+  font-size: 27px;
   font-weight: 700;
   margin-left: 9px;
   line-height: 12px;
 }
 .ticket .part2 .row1,
 .ticket .part2 .row2 {
-  height: 50px;
+  height: 58px;
   border-bottom: 1px solid #363636;
+}
+.ticket .part2 .row1 {
+  height: 50px;
 }
 .ticket .part2 .row3 {
   height: 116px;
@@ -616,6 +627,7 @@ input[type="radio"]:focus + label {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 12px;
 }
 .ticket .part2 .row3 p {
   width: 313px;
@@ -628,9 +640,6 @@ input[type="radio"]:focus + label {
           box-sizing: border-box;
   padding: 20px 15px 15px 0px;
   height: 265px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   border-left: 2px dashed #363636;
@@ -640,26 +649,43 @@ input[type="radio"]:focus + label {
 }
 .ticket .part3 .text {
   font-size: 12px;
-  font-weight: 400;
-  -webkit-transform: rotate(-90deg);
-          transform: rotate(-90deg);
-  min-height: 31px;
-  max-height: 70px;
-  min-width: 139px;
-  margin-top: 0px;
-  margin-left: -18px;
+  position: relative;
+  margin-top: 8px;
+  height: 129px;
+  width: auto;
 }
 .ticket .part3 .text p {
   margin: 0;
-  margin-bottom: 2px;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  position: relative;
+  font-size: 12px;
 }
-.ticket .part3 .text span {
-  font-size: 28px;
+.ticket .part3 .text p:first-of-type {
+  font-weight: 400;
+  font-size: 12px;
+  left: -40px;
+  top: 71px;
 }
-.ticket .part3 .text div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+.ticket .part3 .text p:nth-of-type(2) {
+  font-weight: 300;
+  top: 57px;
+  left: -24px;
+  max-width: 151px;
+  min-width: 120px;
+}
+.ticket .part3 .text p:nth-of-type(3) {
+  font-weight: 300;
+  top: 46px;
+  left: 10px;
+}
+.ticket .part3 .text p:nth-of-type(4) {
+  font-weight: 300;
+  top: 29px;
+  right: -36px;
+}
+.ticket .part3 .text p:nth-of-type(5) {
+  font-weight: 300;
+  top: -25px;
+  right: -36px;
 }
