@@ -523,9 +523,6 @@ input[type="radio"]:focus + label {
   display: flex;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -544,6 +541,7 @@ input[type="radio"]:focus + label {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  margin-left: 60px;
 }
 .ticket .part2 .row1 div p:first-of-type {
   font-weight: 700;
